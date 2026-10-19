@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JUST School practice, do not put important information!!!!!</h1>
+    <form method="get">
+      <label for="name_input">Firstname:</label>
+      <input type="text" id="name_input" name="name_input" />
+      <br /><br />
+      <label for="last_name_input">Lastname:</label>
+      <input type="text" id="last_name_input" name="last_name_input" />
+      <br /><br />
+      <label for="pwd_input">Password:</label>
+      <input
+        type="password"
+        id="pwd_input"
+        name="pwd_input"
+        required
+        minlength="6"
+        maxlength="12" />
+      <br /><br />
+      <input type="submit" id="btn_submit" name="btn_submit" />
+    </form>
+    <br /><br />
+    <form method="get">
+      <fieldset>
+        <legend>Your favourite number</legend>
+        <input type="radio" id="radio_1" name="number_picker" value="1" />
+        <label id="radio_1_name" for="radio_1">1</label>
+        <br /><br />
+
+        <input type="radio" id="radio_2" name="number_picker" value="2" />
+        <label id="radio_2_name" for="radio_2">2</label>
+        <br /><br />
+
+        <input type="radio" id="radio_3" name="number_picker" value="3" />
+        <label id="radio_3_name" for="radio_3">3</label>
+        <br /><br />
+        <input
+          type="submit"
+          value="Submitik"
+          id="number_submit"
+          name="number_submit_btn" />
+      </fieldset>
+    </form>
+    <form action="" method="get">
+      <fieldset>
+        <legend>WHAT BOOKS HAVE YOU READ???</legend>
+        <input
+          type="checkbox"
+          id="book_1"
+          name="firstbook-check"
+          value="The Hobbit" />
+        <label for="book_1">The Hobbit</label>
+        <br />
+        <input
+          type="checkbox"
+          id="book_2"
+          name="firstbook-check"
+          value="The Maze Runner" />
+        <label for="book_2">The maze runner</label>
+        <br />
+        <input
+          type="checkbox"
+          id="book_3"
+          name="firstbook-check"
+          value="PuPUPu" />
+        <label for="book_3">PupUpU</label>
+        <br />
+        <input type="submit" id="book_submit" value="SHARE YOUR BOOKS"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
