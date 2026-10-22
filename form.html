@@ -1,54 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>forms</title>
   </head>
   <body>
     <h1>JUST School practice, do not put important information!!!!!</h1>
-    <form method="get">
-      <label for="name_input">Firstname:</label>
-      <input type="text" id="name_input" name="name_input" />
+    <form id="form_general" method="get">
+      <fieldset form="form_general">
+        <legend>Some basic info</legend>
+        <label for="name_input">Firstname:</label>
+        <input type="text" id="name_input" name="name_input" />
+        <br /><br />
+        <label for="last_name_input">Lastname:</label>
+        <input type="text" id="last_name_input" name="last_name_input" />
+        <br /><br />
+        <label for="pwd_input">Password:*</label>
+        <input
+          type="password"
+          id="pwd_input"
+          name="pwd_input"
+          required
+          minlength="6"
+          maxlength="12" />
+      </fieldset>
+      <br />
+      <label for="hi_dropdown">Choose your hi:</label>
+      <select name="hi_dropdown" id="hi_dropdown">
+        <option value="empty variant">no preference</option>
+        <option value="HEy">HEy</option>
+        <option value="Hello">Hello</option>
+        <option value="Hi">Hi</option>
+      </select>
       <br /><br />
-      <label for="last_name_input">Lastname:</label>
-      <input type="text" id="last_name_input" name="last_name_input" />
-      <br /><br />
-      <label for="pwd_input">Password:</label>
-      <input
-        type="password"
-        id="pwd_input"
-        name="pwd_input"
-        required
-        minlength="6"
-        maxlength="12" />
-      <br /><br />
-      <input type="submit" id="btn_submit" name="btn_submit" />
-    </form>
-    <br /><br />
-    <form method="get">
-      <fieldset>
+      <label for="think_textarea">What do you think about yourself:</label>
+      <br />
+      <textarea
+        name="think_textarea"
+        id="think_textarea"
+        placeholder="Why did you make me do this? You're fighting so you can watch everyone around you die! Think, Mark! You'll outlast every fragile, insignificant being on this planet. You'll live to see this world crumble to dust and blow away! Everyone and everything you know will be gone! What will you have after 500 years?"></textarea>
+
+      <br />
+
+      <fieldset form="form_general">
         <legend>Your favourite number</legend>
         <input type="radio" id="radio_1" name="number_picker" value="1" />
         <label id="radio_1_name" for="radio_1">1</label>
-        <br /><br />
+        <br />
 
         <input type="radio" id="radio_2" name="number_picker" value="2" />
         <label id="radio_2_name" for="radio_2">2</label>
-        <br /><br />
+        <br />
 
         <input type="radio" id="radio_3" name="number_picker" value="3" />
         <label id="radio_3_name" for="radio_3">3</label>
-        <br /><br />
-        <input
-          type="submit"
-          value="Submitik"
-          id="number_submit"
-          name="number_submit_btn" />
       </fieldset>
-    </form>
-    <form action="" method="get">
-      <fieldset>
+
+      <fieldset form="form_general">
         <legend>WHAT BOOKS HAVE YOU READ???</legend>
         <input
           type="checkbox"
@@ -71,8 +80,14 @@
           value="PuPUPu" />
         <label for="book_3">PupUpU</label>
         <br />
-        <input type="submit" id="book_submit" value="SHARE YOUR BOOKS"/>
       </fieldset>
+      <br />
+      <input type="submit" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <input type="reset" value="resetik for the whole form" />
     </form>
   </body>
 </html>
